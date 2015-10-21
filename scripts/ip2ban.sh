@@ -43,12 +43,12 @@ IP2BAN_LOG_BLACKLISTED=0
 # IP2BAN_LOG_PREFIX
 # --------------------
 # The prefix to set to blacklisted logs
-IP2BAN_LOG_PREFIX="BLACKLISTED: "
+IP2BAN_LOG_PREFIX="IP2BAN:"
 
 # IP2BAN_JAIL_NAME
 # --------------------
-# Name of the jail
-IP2BAN_JAIL_NAME="BLACKLIST_JAIL"
+# The name of the jail
+IP2BAN_JAIL_NAME="IP2BAN_JAIL"
 
 # IP2BAN_ZONE_CHAIN
 # --------------------
@@ -57,7 +57,7 @@ IP2BAN_JAIL_NAME="BLACKLIST_JAIL"
 # - if whitelisted ip -> go back to input processing
 # - if already blacklisted ip or reach the number of attempts -> action (drop, reject, etc)
 # - else -> go back to input processing
-IP2BAN_ZONE_CHAIN="ZONE_LIST"
+IP2BAN_ZONE_CHAIN="IP2BAN_ZONE"
 
 # IP2BAN_ZONE_CHAIN_SET
 # --------------------

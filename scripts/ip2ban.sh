@@ -78,11 +78,11 @@ ip2ban_usage()
     echo "ip2ban [-n] -r"
     echo "ip2ban -h"
     echo
-    echo -e "-h \t Display this help"
-    echo -e "-n \t Only print iptables statements"
-    echo -e "-r \t Restore iptables as it was"
-    echo -e "-l \t Enable logs when an ip is banned"
-    echo -e "-a ACTION \t Set an action to take when a banned ip is detected (ACCEPT, DROP, REJECT, etc)"
+    echo -e "-h \n\t Display this help"
+    echo -e "-n \n\t Only print iptables statements"
+    echo -e "-r \n\t Restore iptables as it was"
+    echo -e "-l \n\t Enable logs when an ip is banned"
+    echo -e "-a ACTION \n\t Set an action to take when a banned ip is detected (ACCEPT, DROP, REJECT, etc)"
     echo
     echo "This script can be executed as ./$0 or sourced: source $0 eth0"
 }

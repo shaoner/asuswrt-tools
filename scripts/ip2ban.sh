@@ -19,7 +19,7 @@ IP2BAN_WHITELIST_IPS=""
 # IP2BAN_ATTEMPT_COUNT
 # --------------------
 # Number of attempts allowed
-# By default the 1st attempt to an is banned 20 minutes
+# By default the 1st attempt to an invalid port is banned 20 minutes
 IP2BAN_ATTEMPT_COUNT=1
 
 # IP2BAN_BAN_TIME
@@ -52,7 +52,7 @@ IP2BAN_JAIL_NAME="IP2BAN_JAIL"
 
 # IP2BAN_ZONE_CHAIN
 # --------------------
-# Name of the chain in which an action is taken
+# The name of the chain in which an action is taken
 # - if whitelisted port -> go back to input processing
 # - if whitelisted ip -> go back to input processing
 # - if already blacklisted ip or reach the number of attempts -> action (drop, reject, etc)
@@ -61,14 +61,13 @@ IP2BAN_ZONE_CHAIN="IP2BAN_ZONE"
 
 # IP2BAN_ZONE_CHAIN_SET
 # --------------------
-# Name of the chain in which an IP is declared banned.
-# If a packet reaches this zone, it is marked
+# The name of the chain in which an IP is declared banned.
+# If a packet reaches this zone, it is considered "banned"
 IP2BAN_ZONE_CHAIN_SET="${IP2BAN_ZONE_CHAIN}_SET"
 
 # IP2BAN_DRY_RUN
 # --------------------
 # If set to 1, print the iptables rules without adding them
-# Set IP2BAN_DRY_RUN to 0, to add all the rules
 # Can be overrided by -n option
 IP2BAN_DRY_RUN=0
 

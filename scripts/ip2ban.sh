@@ -149,8 +149,7 @@ ip2ban_is_valid_interface()
 ip2ban_find_wan_interface()
 {
     local list=$(ifconfig | grep -o '^eth[0-9]')
-    IFS='
-'
+    IFS=$'\n'
     for ifc in $list; do
         if ip2ban_is_valid_interface "$ifc"; then
             echo "$ifc"
